@@ -53,6 +53,7 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.Ho
                 @Override
                 public void onClick(View view) {
                     items.remove(getAdapterPosition());
+                    notifyDataSetChanged();
                 }
             });
         } }
